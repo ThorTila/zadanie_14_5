@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: darkgray;
+}
+form {
+    background: white;
+    border-radius: 15px;
+    border: 2px dashed black;
+    margin: 2%;
+    padding: 2%;
+}
+input {
+    border: none;
+    width: 30%;
+    font-size: 300%;
+}
+button {
+    width: 9%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #603cba;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 2%;
+    cursor: pointer;
+}
+button:hover {
+    background: #5636a7;
+    box-shadow: 0 0 5px black;
+}
+img {
+    float: left;
+    max-width: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+p {
+    display: inline-block;
+    width: 90%;
+    background: white;
+    border-radius: 5px;
+    padding-left: 2%;
+    height: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 50px;
+}
+a {
+    text-decoration: none;
+    color: darkgray;
+}
+.contactItem {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10%;
+}
+.contactItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.contactItem > * {
+    margin: 4%;
+    align-self: center;
+}
