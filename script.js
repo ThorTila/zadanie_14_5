@@ -1,3 +1,3 @@
 /* global App*/
-let app = React.createElement(App);
+let app = <App/>;
 ReactDOM.render(app, document.getElementById('app'));

@@ -3,7 +3,10 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "rules": {
         "indent": [
             "off"
@@ -19,8 +22,22 @@ module.exports = {
         "semi": [
             "error",
             "always"
+        ],
+        "react/display-name": [
+            "off"
+        ],
+        "react/no-deprecated": [
+            "off"
         ]
     },
+    "plugins": [
+        "react"
+      ],
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
     "globals": {
         "React": false,
         "ReactDOM": false,
